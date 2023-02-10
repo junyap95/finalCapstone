@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Childhood</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="onLoad()">
+  <div class="main-container">
+    <div class="sub-container">
+      <nav id="top">
+        <a href="#hobby">Hobbies</a>
+        <a href="#toy">Toys</a>
+        <a class="saved-images" href="./savedGallery.html" target="_blank">Saved Images</a>
+        <a href="./contactForm.html" target="_blank">Contact Us</a>
+      </nav>
+      <main>
+        <header>
+          <h1 id="hobby">Hobbies</h1>
+        </header>
+        <section>
+          <h2>Drawing</h2>
+          <p>I love drawing since I was a kid.</p>
+          <p>I enjoyed expressing what I saw by drawing on a piece of paper with colourful <b>crayons</b>.</p>
+          <img
+            src="https://i.pinimg.com/736x/e4/f6/33/e4f633441e50b4b65c24bf2e9e72a524--crayon-drawings-drawings-of.jpg"
+            alt="Crayon Drawing">
+          <span>
+            <button onclick="onLike(this)" value="liked">Like</button>
+            <button onclick="onSave(this)" class="save-btn" value="drawing">Save for later</button>
+          </span>
+        </section>
+        <section>
+          <h2>Reading</h2>
+          <p>My parents used to read me bedtime stories when I was small.</p>
+          <p>My favourite childhood book is <em>Harry Potter</em></p>
+          <img src="https://ichef.bbci.co.uk/news/304/mcs/media/images/71331000/jpg/_71331828_potterstone.jpg"
+            alt="Harry Potter Book">
+          <span>
+            <button onclick="onLike(this)" value="liked">Like</button>
+            <button onclick="onSave(this)" class="save-btn" value="reading">Save for later</button>
+          </span>
+        </section>
+
+        <header>
+          <h1 id="toy">Toys</h1>
+        </header>
+        <section>
+          <h2>Lego Bricks</h2>
+          <p>The colourful and different forms of <em>Lego</em> bricks have always intrigued me as a child.</p>
+          <p>I once built a castle using <em>Lego</em> and I was so proud of it.</p>
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/25/2022/08/Inquisitor-transport-Scythe-2c38f59.png"
+            alt="Lego Bricks">
+          <span>
+            <button onclick="onLike(this)" value="liked">Like</button>
+            <button onclick="onSave(this)" class="save-btn" value="lego">Save for later</button>
+          </span>
+        </section>
+        <section>
+          <h2>Dinosaur figures</h2>
+          <p>I had a collection of dinosaur figures when I was 6.</p>
+          <img
+            src="https://cdn11.bigcommerce.com/s-fa6invgjkj/images/stencil/original/products/680/4921/XTT-MED-DINO-BNDL1red__22345.1648640698.jpg?c=2"
+            alt="Dinosaur Figures">
+          <p>Through my <b>vivid imagination</b>, I always imagined them fighting against each other.</p>
+          <span>
+            <button onclick="onLike(this)" value="liked">Like</button>
+            <button onclick="onSave(this)" class="save-btn" value="dinosaur">Save for later</button>
+          </span>
+        </section>
+        <br>
+        <hr>
+        <!-- a form to allow user to leave comments -->
+        <section>
+          <div class="formRow">
+            <label for="comments">We would like to hear from you! Leave us a comment:</label><br>
+
+            <form>
+              <textarea id="textarea-text" class="textInput-comments"></textarea>
+              <button type="button" onclick="onComment(this)" value="comment">Submit</button>
+            </form>
+
+            <br>
+            <br>
+            <h3>Comments from our users</h3>
+            <div id="comment-added">
+
+            </div>
+
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>© 2022 JB</p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link href="./index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- navbar -->
+    <div class="sub-container">
+      <header>
+        <div class="nav_bar">
+          <h1>Contact Form</h1>
+        </div>
+      </header>
+      <div class="mainContainer">
+        <!-- form for if a person would like to contact -->
+        <div class="subscription">
+          <h2>Send Us A Message!</h2>
+          <form class="form">
+            <!-- name input -->
+            <div class="formRow">
+              <label for="fname">Full Name:</label><br>
+              <input class="textInput" type="text" id="fname" name="fname"><br>
+            </div>
+            <!-- email input -->
+            <div class="formRow">
+              <label for="emailAdd">Email address:</label><br>
+              <input class="textInput" type="text" id="emailAdd" name="emailAdd"><br>
+            </div>
+            <!-- comments input -->
+            <div class="formRow">
+              <label for="comments">Your message:</label><br>
+              <textarea class="textInput-comments" type="text" id="comments" name="comments"></textarea>
+              <br>
+            </div>
+
+            <!-- submit button -->
+            <div class="submitRow">
+
+              <button type="submit" onclick="onContactForm(this)" value="contact-form">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class=" copyright">
+        © 2022 JB
+      </div>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
