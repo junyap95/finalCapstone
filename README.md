@@ -21,6 +21,8 @@ My Childhood
 
 Clone this repo and launch the index.html file in your browser.
 
+### Usage Instruction
+
 ![Home Page](./images/01-nav.png)
 This is the `home page`. Users can navigate to different sections of the site by clicking on the items on the top bar.
 
