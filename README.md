@@ -6,6 +6,7 @@
 - [Project name](#project-name)
 - [Project description](#description-of-project)
 - [Installation](#installation)
+- [Usage Instructions](#usage-instructions)
 
 ### Project Name
 
